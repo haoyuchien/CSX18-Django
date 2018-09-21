@@ -3,7 +3,7 @@
 ## Introduction
 I'm HaoYu Chien majoring in philosphy @ NTU.
 ## Progress Report
-* Wee1:
+* Week 1:
 
 > **In class:**
 

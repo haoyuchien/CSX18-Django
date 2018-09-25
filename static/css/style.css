@@ -5,24 +5,24 @@ html, body {
 
     h1, p {
         text-align: center;
-        font-family: "Arial";
+        font-family: "Arial"
     }
 
     #send-box {
-        width: 500%;
-        text-align: center;
+        width: 100%;
+        text-align: center
 
     #albums {
         height: 100;
         width: 100;
-        text-align: center;
+        text-align: center
     }
 
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 99%;
+        width: 99%
     }
 
 

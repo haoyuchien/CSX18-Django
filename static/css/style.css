@@ -5,24 +5,32 @@ html, body {
 
     h1, p {
         text-align: center;
-        font-family: "Arial"
+        font-family: "Arial";
     }
 
     #send-box {
         width: 100%;
-        text-align: center
+        text-align: center;
+
+    #send-box input {
+        display: inline-block;
+    }
+
+    input[name="cmt"] {
+        width: 70%;
+    }
 
     #albums {
         height: 100;
         width: 100;
-        text-align: center
+        text-align: center;
     }
 
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 99%
+        width: 99%;
     }
 
 

@@ -17,7 +17,7 @@ html, body {
     }
 
     input[name="cmt"] {
-        width: 70%;
+        width: 500%;
     }
 
     #albums {
@@ -26,7 +26,7 @@ html, body {
         text-align: center;
     }
 
-    .center {
+    img.center {
         display: block;
         margin-left: auto;
         margin-right: auto;

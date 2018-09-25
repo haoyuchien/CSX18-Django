@@ -5,10 +5,13 @@ html, body {
 
     h1, p {
         text-align: center;
-        color: white;
+        font-family: "athelas";
+
     }
 
-
+    #send-box {
+        width: 500%;
+        text-align: center;
 
     #albums {
         height: 100;

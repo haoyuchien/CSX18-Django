@@ -16,17 +16,13 @@ html, body {
         display: inline-block;
     }
 
-    input[name="cmt"] {
-        width: 500%;
-    }
-
     #albums {
         height: 100;
         width: 100;
         text-align: center;
     }
 
-    img.center {
+    .center {
         display: block;
         margin-left: auto;
         margin-right: auto;

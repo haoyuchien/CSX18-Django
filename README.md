@@ -9,7 +9,7 @@ I'm HaoYu Chien majoring in philosphy @ NTU.
 
 >> i. register Heroku,Github  
 >> ii. install Django,Anaconda  
->> iii. learn heroku and git.
+>> iii. learn heroku and git
 
 > **Homework :**  
 https://haoyuchien.herokuapp.com

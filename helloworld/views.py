@@ -20,5 +20,15 @@ def index(request):
               "ttps://images.genius.com/d2a7d2a3652692c6b45c96c6bf3de89e.500x500x1.jpg", "https://i.scdn.co/image/8f9" \
               "47969df6981a5ed54948c4aec8f2604811e3b", "https://lastfm-img2.akamaized.net/i/u/770x0/cf089e6d438b59017" \
               "c8b89f7facf5d0a.jpg", "https://assets.genius.com/images/default_cover_art.png?1538596065", "https://t2" \
-              ".genius.com/unsafe/620x600/https%3A%2F%2Fimages.genius.com%2F3fd361d2fff4a062f9b4804c99862bcd.500x484x1.png"]
+              ".genius.com/unsafe/620x600/https%3A%2F%2Fimages.genius.com%2F3fd361d2fff4a062f9b4804c99862bcd.500x484x" \
+               "1.png"]
+    randomimglist = []
+
+    for i in range(7):
+        randomimg = random.randint(0, len(imgurls) - 1)
+        if randomimg not in randomimglist:
+            randomimglist += randomimg
+    for i in range(len(randomimglist)):
+        randomimglist[i] = imgurls[i]
+
 	return render(request, 'BLACKBEAR.html', locals())

@@ -22,7 +22,6 @@ def index(request):
               "c8b89f7facf5d0a.jpg", "https://assets.genius.com/images/default_cover_art.png?1538596065", "https://t2" \
               ".genius.com/unsafe/620x600/https%3A%2F%2Fimages.genius.com%2F3fd361d2fff4a062f9b4804c99862bcd.500x484x" \
                "1.png"]
-    """
     randomimglist = []
     for i in range(7):
         randomimg = random.randint(0, len(imgurls) - 1)
@@ -30,5 +29,4 @@ def index(request):
             randomimglist += randomimg
     for i in range(len(randomimglist)):
         randomimglist[i] = imgurls[i]
-        """
-	return render(request, 'BLACKBEAR.html', locals())
+    return render(request, 'BLACKBEAR.html', locals())

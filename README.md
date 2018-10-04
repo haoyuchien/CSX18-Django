@@ -19,7 +19,22 @@ https://haoyuchien.herokuapp.com
 > **In Class:**
 
 >> i. live demo last week’s example  
->> ii. basic HTML/CSS
+
+> **At Home:**
+
+>>basic HTML/CSS  
 
 > **Homework:**  
 https://haoyuchien.herokuapp.com
+
+* Week 3:
+
+> **At Home:**
+
+>> i. basic Python/Django  
+>> ii. edit view.py  
+>> iii. learn for loop  
+
+> **Homework:**  
+https://haoyuchien.herokuapp.com
+

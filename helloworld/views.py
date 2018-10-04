@@ -15,4 +15,4 @@ def index(request):
         if randomindex not in randomlist:
             randomlist += randomindex
             randomlist[i] = imgurl[randomindex]
-	return render(request, 'BLACKBEAR.html', locals())
+    return render(request, 'BLACKBEAR.html', locals())

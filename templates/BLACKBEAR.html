@@ -33,5 +33,11 @@
         <img src="https://i.scdn.co/image/caa8a134bb7757aa56dd965aac02554861b6768c" height="100" width="100">
         <img src="https://pbs.twimg.com/media/DOTjQsRV4AAt1wP.jpg:large" height="100" width="100">
     </div>
+    <div>
+        {% for imgurl in imgurls %}
+            <!-- <span>{{imgurl}}</span> -->
+            <img src="{{imgurl}}" alt={{imgurl}}>
+        {% endfor %}
+    </div>
 </body>
 </html>

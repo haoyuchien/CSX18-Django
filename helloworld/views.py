@@ -15,5 +15,9 @@ def index(request):
     for i in range(7):
         randomindex = random.randint(0, len(imgurl) - 1)
         if randomindex not in randomlist:
-            randomlist.append(imgurl[randomindex])
+            randomlist.append(randomindex)
+
+    for i in range(len(randomlist)):
+        randomlist[i] = imgurl[randomlist[i]]
+        
     return render(request, 'BLACKBEAR.html', locals())

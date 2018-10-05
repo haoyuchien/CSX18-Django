@@ -22,16 +22,14 @@ def index(request):
     for i in range(len(randomlist)):
         randomlist[i] = imgurl[randomlist[i]]
 
-    for i in range(7):
+    D1 = TourDates.objects.create(city="Morrison, CO", venue="Red Rocks Amphitheatre", date="2018-10-19")
+    D2 = TourDates.objects.create(city="Las Vegas, NV", venue="JEWEL Nightclub", date="2018-10-29")
+    D3 = TourDates.objects.create(city="Cullowhee, NC", venue="Western Carolina University", date="2018-11-01")
+    D4 = TourDates.objects.create(city="Las Vegas, NV", venue="JEWEL Nightclub", date="2018-11-16")
+    D5 = TourDates.objects.create(city="Los Angeles, CA", venue="Hollywod Palladium", date="2018-11-28")
+    D6 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-06")
+    D7 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-07")
 
-        D1 = TourDates.objects.create(city="Morrison, CO", venue="Red Rocks Amphitheatre", date="2018-10-19")
-        D2 = TourDates.objects.create(city="Las Vegas, NV", venue="JEWEL Nightclub", date="2018-10-29")
-        D3 = TourDates.objects.create(city="Cullowhee, NC", venue="Western Carolina University", date="2018-11-01")
-        D4 = TourDates.objects.create(city="Las Vegas, NV", venue="JEWEL Nightclub", date="2018-11-16")
-        D5 = TourDates.objects.create(city="Los Angeles, CA", venue="Hollywod Palladium", date="2018-11-28")
-        D6 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-06")
-        D7 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-07")
-
-        tourdates = TourDates.objects.all()
+    tourdates = TourDates.objects.all()
 
     return render(request, 'BLACKBEAR.html', locals())

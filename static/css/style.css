@@ -3,7 +3,7 @@ html, body {
         margin: 0;
     }
 
-    h1, p {
+    h1, p, #tourdates {
         text-align: center;
         font-family: "Arial";
     }

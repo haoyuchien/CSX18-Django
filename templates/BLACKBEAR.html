@@ -15,6 +15,11 @@
 
     <p>Ayeeeeeee Blackbear is my fav singer <3</p>
 
+    <div>
+        {% for tourdate in tourdates%}
+        {{tourdate.city}}{{tourdate.venue}}{{tourdate.date}}
+    </div>
+
     <div id="send-box">
         <form id="send-form">
             <input type="text" name="cmt" id="comment" placeholder="Add your comment">

@@ -33,3 +33,11 @@ def index(request):
     tourdates = TourDates.objects.all()
 
     return render(request, 'BLACKBEAR.html', locals())
+
+def tour(request):
+
+    return render(request, 'TOUR.html', locals())
+
+def feed(request):
+
+    return render(request, 'FEED.html', locals())

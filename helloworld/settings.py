@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'testdb',
+        'NAME': 'submission',
         'USER': 'haoyuchien',
         'PASSWORD': '927729',
         'HOST': 'localhost',

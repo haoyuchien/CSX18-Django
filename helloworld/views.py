@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from guestbook.models import TourDates
 import random
+from guestbook.models import TextMessage
 
 
 def index(request):

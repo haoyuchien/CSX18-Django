@@ -1,0 +1,28 @@
+html, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    h1, p, #tourdates {
+        text-align: center;
+        font-family: "Arial";
+    }
+
+    #albums {
+        height: 100;
+        width: 100;
+        text-align: center;
+    }
+
+    .center {
+        display: block;
+        margin: auto;
+    }
+
+    #send-box {
+        width: 100%;
+        text-align: center;
+
+    #send-box input {
+        display: inline-block;
+    }

@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh">
 {% load  staticfiles %}
+<style>
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: steelBlue;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: gray;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,11 +37,7 @@
 
     <p>Ayeeeeeee Blackbear is my fav singer <3</p>
 
-    <div id="tourdates">
-        {% for tourdate in tourdates%}
-        {{tourdate.city}} {{tourdate.venue}} {{tourdate.date}} <br>
-        {% endfor%}
-    </div>
+    <a href="TOUR.html">TOUR<a/>
 
     <div id="send-box">
         <form id="send-form" action="/action_page.php" target="_blank" method="GET">
@@ -30,7 +48,6 @@
 
     <div id="albums" class="center">
         {% for url in randomlist %}
-            <!-- <span>{{imgurl}}</span> -->
             <img src="{{url}}" height="100" width="100">
         {% endfor %}
     </div>

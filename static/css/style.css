@@ -11,9 +11,10 @@ h1, p {
 a {
     display: inline-block;
     text-decoration: none;
-    padding: 50px;
+    padding: 10px;
     margin: 10px;
     font-family: "Arial";
+    font-size: 26px;
 }
 
 #albums {

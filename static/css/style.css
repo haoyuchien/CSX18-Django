@@ -6,15 +6,13 @@ html, body {
 h1, p {
     text-align: center;
     font-family: "Arial";
-    font-size: 37pt;
+    font-size: 34pt;
 }
 
 a {
     display: inline-block;
-    text-decoration: none;
-    padding: 10px;
-    margin: 10px;
-    font-family: "Arial";
+    padding: 7px;
+    font-family: "athelas";
     font-size: 30px;
 }
 

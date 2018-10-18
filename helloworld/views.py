@@ -40,7 +40,7 @@ def tour(request):
     D7 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-07")
 
     tourdates = TourDates.objects.all()
-"""
+    """
     return render(request, 'TOUR.html', locals())
 
 

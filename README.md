@@ -22,7 +22,7 @@ https://haoyuchien.herokuapp.com
 
 > **At Home:**
 
->>basic HTML/CSS  
+>> i. basic HTML/CSS  
 
 > **Homework:**  
 https://haoyuchien.herokuapp.com
@@ -38,3 +38,28 @@ https://haoyuchien.herokuapp.com
 > **Homework:**  
 https://haoyuchien.herokuapp.com
 
+* Week 4:
+
+> **In Class:**
+
+>> i. download/learn SQLite
+
+> **At Home:**
+
+>> i. edit model.py  
+>> ii. make migration
+
+* Week 5:
+
+> **In Class:**
+
+>> i. download/learn PostgreSQL
+
+> **At Home:**
+
+>> i. basic database  
+>> ii. create different urls  
+>> iii. get & post 
+
+> **Homework:**  
+https://haoyuchien.herokuapp.com

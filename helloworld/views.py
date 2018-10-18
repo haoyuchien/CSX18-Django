@@ -26,6 +26,11 @@ def index(request):
     for i in range(len(randomlist)):
         randomlist[i] = imgurl[randomlist[i]]
 
+    return render(request, 'BLACKBEAR.html', locals())
+
+
+def tour(request):
+
     D1 = TourDates.objects.create(city="Morrison, CO", venue="Red Rocks Amphitheatre", date="2018-10-19")
     D2 = TourDates.objects.create(city="Las Vegas, NV", venue="JEWEL Nightclub", date="2018-10-29")
     D3 = TourDates.objects.create(city="Cullowhee, NC", venue="Western Carolina University", date="2018-11-01")
@@ -35,11 +40,6 @@ def index(request):
     D7 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-07")
 
     tourdates = TourDates.objects.all()
-
-    return render(request, 'BLACKBEAR.html', locals())
-
-
-def tour(request):
 
     return render(request, 'TOUR.html', locals())
 

@@ -52,3 +52,6 @@ def feed(request):
     msgs = TextMessage.objects.all()
 
     return render(request, 'FEED.html', locals())
+
+def about(request):
+    return render(request, 'ABOUT.html', locals())

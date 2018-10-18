@@ -3,10 +3,16 @@ html, body {
     margin: 0;
 }
 
-h1, p {
+h1 {
     text-align: center;
     font-family: "Arial";
     font-size: 34pt;
+}
+
+p {
+    text-align: center;
+    font-family: "Arial";
+    font-size: 17pt;
 }
 
 a {
@@ -26,6 +32,10 @@ a {
 .center {
     display: block;
     margin: auto;
+}
+
+#tour {
+display: block
 }
 
 #container {

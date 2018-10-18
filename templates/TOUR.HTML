@@ -13,7 +13,13 @@
 
     <center>
         {% for dates in tourdates %}
-            <p>{{dates.city}}        {{dates.venue}}        {{dates.date}}<br></p>
+            <!--<p>{{dates.city}}&emsp;&emsp;{{dates.venue}} &emsp;&emsp;{{dates.date}}<br></p>-->
+        <section id="tour">
+            {{dates.city}}
+            {{dates.venue}}
+            {{dates.date}}
+            <br>
+        </section>
         {% endfor %}
     </center>
 

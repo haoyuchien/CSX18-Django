@@ -3,7 +3,7 @@ from django.conf import settings
 
 # Create your models here.
 
-"""
+
 class TourDates(models.Model):
     city = models.CharField(max_length=25, blank=False)
     venue = models.CharField(max_length=50, blank=False)
@@ -11,7 +11,7 @@ class TourDates(models.Model):
 
     def __str__(self):
         return self.city + " " + self.venue + " " + self.date
-"""
+
 
 class TextMessage(models.Model):
     talker = models.CharField(max_length=20, blank=False)

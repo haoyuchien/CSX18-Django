@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate
 from django.contrib import auth
 from django.http import HttpResponse
 from django.contrib.auth.models import User
-# from guestbook.models import TourDates
+from guestbook.models import TourDates
 import random
 from guestbook.models import TextMessage
 
@@ -30,7 +30,7 @@ def index(request):
 
 
 def tour(request):
-    """
+
     D1 = TourDates.objects.create(city="Morrison, CO", venue="Red Rocks Amphitheatre", date="2018-10-19")
     D2 = TourDates.objects.create(city="Las Vegas, NV", venue="JEWEL Nightclub", date="2018-10-29")
     D3 = TourDates.objects.create(city="Cullowhee, NC", venue="Western Carolina University", date="2018-11-01")
@@ -40,7 +40,7 @@ def tour(request):
     D7 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-07")
 
     tourdates = TourDates.objects.all()
-    """
+
     return render(request, 'TOUR.html', locals())
 
 

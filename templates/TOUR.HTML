@@ -12,17 +12,10 @@
     <h1>BLACKBEAR</h1>
 
     <center>
-        <p>THIS IS THE TOUR DATES!!!</p>
-
+        {% for dates in tourdates %}
+            <p>{{dates.city}}        {{dates.venue}}        {{dates.date}}<br></p>
+        {% endfor %}
     </center>
-<!--
-    <div id="send-box">
-        <form id="send-form" action="/action_page.php" target="_blank" method="GET">
-            <input type="text" name="cmt" id="comment" placeholder="Add your comment">
-            <input type="submit" value="submit">
-        </form>
-    </div>
-   -->
 
 </body>
 </html>

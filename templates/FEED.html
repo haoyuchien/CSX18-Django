@@ -21,13 +21,24 @@
                 </div>
                 {% endfor %}
             </div>
-            <div id="send-box">
-                <form id="send-form" action="." method="get">
-                    {% csrf_token %}
-                    <input type="text" name="name" id="name" placeholder="ID">
-                    <input type="text" name="msg" id="msg" placeholder="Message">
-                    <input type="submit" id="submit" value="Submit">
-                </form>
+
+                {% if user.is_authenticated %}
+                <div id="send-box">
+                    <form id="send-form" action="." method="post">
+                        {% csrf_token %}
+                        <input type="text" name="msg" id="msg" placeholder="Message">
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                {% else %}
+                <div id="send-box">
+                    <form id="send-form" action="." method="post">
+                        {% csrf_token %}
+                        <input type="text" name="name" id="name" placeholder="Username">
+                        <input type="text" name="msg" id="msg" placeholder="Message">
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                </div>
+                {% endif %}
             </div>
         </div>
     </section>

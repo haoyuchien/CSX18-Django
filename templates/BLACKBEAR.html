@@ -33,6 +33,19 @@ a:active {
 
     <h1>BLACKBEAR</h1>
 
+    {% if user.is_authenticated %}
+        <center>
+            <p style="font-size:13pt">Hi {{ user.username }}!
+            <button onclick="location.href='account/logout'">Logout</button>
+            </p>
+        </center>
+    {% else %}
+        <center>
+        <p style="font-size:13pt">You are not logged in.
+            <button onclick="location.href='/account/login'">Login</button></p>
+        </center>
+    {% endif %}
+
     <img src="https://pbs.twimg.com/media/DE0AbUuVoAA7vxb.jpg:large" height="700" weight="700" class="center">
 
     <center>

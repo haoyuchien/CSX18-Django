@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'guestbook'
+    'guestbook',
+    'account.apps.AccountConfig'
 ]
 
 MIDDLEWARE = [
@@ -133,5 +134,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
     ]
 
-LOGIN_REDIRECT_URL = '/feed/'
+LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'

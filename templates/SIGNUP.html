@@ -4,22 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>LOGIN</title>
+    <title>SIGNUP</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body style="background-color:pink">
-<h1>BLACKBEAR</h1>
-<center>
-    <p>Login to Continue</p>
+
+    <h1>BLACKBEAR</h1>
+
+    <p>Sign Up</p>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Login</button>
+        <button type="submit">Sign up</button>
     </form>
-    <div id="signup">
-        <p>New here? No worries</p>
-        <button onclick="location.href='/account/signup/'" type="button">Create An Account</button>
-    </div>
-</center>
+
 </body>
 </html>

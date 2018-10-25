@@ -63,3 +63,13 @@ https://haoyuchien.herokuapp.com
 
 > **Homework:**  
 https://haoyuchien.herokuapp.com
+
+* Week 6:
+
+> **At Home:**
+
+>> i. login/logout  
+>> ii. register
+
+> **Homework:**  
+https://haoyuchien.herokuapp.com

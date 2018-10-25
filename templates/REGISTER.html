@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>REGISTER</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color:pink">
+
+    <h1>BLACKBEAR</h1>
+    <center>
+        <p>Create An Account</p>
+        <form action="." method="POST" name="form1">
+        {% csrf_token %}
+        <div><p>Username: <input type="text" name="username" id="username" /></p></div>
+        <div><p>Password: <input type="password" name="password" id="password" /></p></div>
+        <div><p>Confirm Password: <input type="password" name="checkpassword" id="checkpassword" /></p></div>
+        <div>
+            <input type="submit" name="button" id="button" value="Register" />
+        </div>
+        </form>
+        <span style="color: red">{{message}}</span>
+    </center>
+
+</body>
+</html>

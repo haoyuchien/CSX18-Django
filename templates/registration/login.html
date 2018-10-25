@@ -10,11 +10,16 @@
 <body style="background-color:pink">
 <h1>BLACKBEAR</h1>
 <center>
+    <p>Login to Continue</p>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Login</button>
     </form>
+    <div id="register">
+        <p>New here? No worries</p>
+        <button onclick="location.href='/register/'" type="button">Create An Account</button>
+    </div>
 </center>
 </body>
 </html>

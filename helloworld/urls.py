@@ -23,5 +23,6 @@ urlpatterns = [
     path('tour/', views.tour, name='tour'),
     path('feed/', views.feed, name='feed'),
     path('about/', views.about, name='about'),
-    path('account/', include('django.contrib.auth.urls'))
+    path('account/', include('django.contrib.auth.urls')),
+    path('register/', views.register, name='register')
 ]

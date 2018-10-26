@@ -12,8 +12,8 @@
 
 <h1>BLACKBEAR</h1>
     <section id="guestbook">
-        <div class="container">
-            <div id="content">
+        <div class="container" align="center" valign="center">
+            <div id="content" align="left">
                 {% for msg in msgs %}
                 <div class='msg'>
                     <span class="name">{{msg.talker}}</span>
@@ -26,17 +26,13 @@
                 <div id="send-box">
                     <form id="send-form" action="." method="post">
                         {% csrf_token %}
-                        <input type="text" name="msg" id="msg" placeholder="Message">
+                        <input type="text" name="msg" id="msg" placeholder="Leave a comment">
                         <input type="submit" id="submit" value="Submit">
                     </form>
                 {% else %}
                 <div id="send-box">
-                    <form id="send-form" action="." method="post">
-                        {% csrf_token %}
-                        <input type="text" name="name" id="name" placeholder="Username">
-                        <input type="text" name="msg" id="msg" placeholder="Message">
-                        <input type="submit" id="submit" value="Submit">
-                    </form>
+                    <p>Login to comment</p>
+                    <button onclick="location.href='/account/login'">Login</button>
                 </div>
                 {% endif %}
             </div>

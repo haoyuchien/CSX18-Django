@@ -12,11 +12,13 @@
     <h1>BLACKBEAR</h1>
 
     <p>Sign Up</p>
-    <form method="post">
+    <center>
+        <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Sign up</button>
-    </form>
+        </form>
+    </center>
 
 </body>
 </html>

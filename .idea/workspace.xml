@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c4a5968-9f1e-4a2a-8189-31374b272eca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/helloworld/views.py" afterPath="$PROJECT_DIR$/helloworld/views.py" />
-      <change beforePath="$PROJECT_DIR$/templates/ABOUT.html" afterPath="$PROJECT_DIR$/templates/ABOUT.html" />
+      <change beforePath="$PROJECT_DIR$/templates/SIGNUP.html" afterPath="$PROJECT_DIR$/templates/SIGNUP.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SIGNUP.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SIGNUP.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/SIGNUP.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -85,7 +83,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FEED.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FEED.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/FEED.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
@@ -157,12 +155,12 @@
         <option value="$PROJECT_DIR$/helloworld/settings.py" />
         <option value="$PROJECT_DIR$/helloworld/urls.py" />
         <option value="$PROJECT_DIR$/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/templates/SIGNUP.html" />
         <option value="$PROJECT_DIR$/templates/FEED.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/helloworld/views.py" />
         <option value="$PROJECT_DIR$/templates/ABOUT.html" />
+        <option value="$PROJECT_DIR$/templates/SIGNUP.html" />
       </list>
     </option>
   </component>
@@ -730,18 +728,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/SIGNUP.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/FEED.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/SIGNUP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>

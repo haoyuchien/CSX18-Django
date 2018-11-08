@@ -47,7 +47,7 @@ a:active {
             <div class="acty-srch">
                 {% if user.is_authenticated %}
                     <form id="activity" action="." method="post">
-                        <button>Personal Activity</button>
+                        <input type="submit" value="Personal Activity"></input>
                     </form>
                 {% endif %}
                 <form id="search" action="." method="get">

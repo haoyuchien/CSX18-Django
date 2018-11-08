@@ -79,6 +79,17 @@ def activity(request):
                 msg_search = request.GET.get('search')
                 msgs = TextMessage.objects.filter(message__icontains=msg_search)
 
+        if request.method == 'POST':
+            if request.GET.get('msg') is not None:
+                _message = request.GET.get('original')
+                _edited_msg = request.GET.get('edit')
 
+                if _edited_msg != "":
+                    current_msg = TextMessage.objects.get(message=_message)
+                    current_msg.message = _edited_msg
+                    current_msg.save()
 
+                else:
+                    current_msg = TextMessage.objects.get(message=_message)
+                    current_msg.delete()
     return render(request, 'ACTIVITY.html', locals())

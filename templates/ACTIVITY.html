@@ -59,9 +59,11 @@ a:active {
                     {{msg.message}}
                     <div class="UD" align="right">
                         <form id="ed-de" action="." method="post">
-                            <input type="text" id="edit" placeholder="Edit your comment" required="required">
-                            <button type="submit">Edit</button>
-                            <button type="button">Delete</button>
+                            <input type="text" name="original" id="original" placeholder="Copy your original comment" required>
+                            <input type="submit" name="delete" id="delete" value="Delete">
+                            <br>
+                            <input type="text" name="edit" id="edit" placeholder="Edit your comment">
+                            <input type="submit" name="et" id="et" value="Edit">
                         </form>
                     </div>
 

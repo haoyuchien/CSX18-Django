@@ -125,3 +125,11 @@ input[type="button"] {
 .UD>button{
     display: inline-block;
 }
+
+input[name="original"] {
+    width: 70%;
+}
+
+input[name="edit"] {
+    width: 70%;
+}

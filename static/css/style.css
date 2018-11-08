@@ -124,5 +124,5 @@ input[type="button"] {
 
 .UD {
     display: inline-block;
-    text-align: right;
+    position:right;
 }

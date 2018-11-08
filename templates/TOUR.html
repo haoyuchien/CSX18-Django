@@ -11,6 +11,17 @@
 
     <h1>BLACKBEAR</h1>
 
+    <nav id="navbar">
+    <center>
+        <ul>
+            <li><a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a></li>
+            <li><a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a></li>
+            <li><a href="{% url 'tour' %}" style="font-family:Arial; font-size:13pt">TOUR</a></li>
+            <li><a href="{% url 'feed' %}" style="font-family:Arial; font-size:13pt">FEED</a> </li>
+        </ul>
+    </center>
+    </nav>
+
     <center>
         {% for dates in tourdates %}
             <!--<p>{{dates.city}}&emsp;&emsp;{{dates.venue}} &emsp;&emsp;{{dates.date}}<br></p>-->

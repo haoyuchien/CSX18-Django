@@ -24,7 +24,8 @@ a {
 }
 
 #navbar ul li{
-    display: inline;
+    display: inline-block;
+    text-align: center;
     font-family:"Arial";
     font-size: 13pt;
 }

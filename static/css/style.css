@@ -23,6 +23,12 @@ a {
     font-weight: bold;
 }
 
+#navbar ul li{
+    display: inline;
+    font-family:"Arial";
+    font-size: 13pt;
+}
+
 #albums {
     height: 100;
     width: 100;
@@ -35,7 +41,7 @@ a {
 }
 
 #tour {
-display: block
+    display: block
 }
 
 #container {

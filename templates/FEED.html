@@ -13,6 +13,13 @@
 <h1>BLACKBEAR</h1>
     <section id="guestbook">
         <div class="container" align="center" valign="center">
+            <div class="search">
+                <form id="search" action="." method="get">
+                    <input type="text" name="search" id="srch" placeholder="Search comments">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+
             <div id="content" align="left">
                 {% for msg in msgs %}
                 <div class='msg'>

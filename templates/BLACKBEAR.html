@@ -33,8 +33,8 @@ a:active {
 
     <h1>BLACKBEAR</h1>
 
-    <div id="navbar">
-        <nav>
+    <div >
+        <nav id="navbar">
             <ul>
             <li><a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a></li>
             <li><a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a></li>
@@ -58,13 +58,13 @@ a:active {
     {% endif %}
 
     <img src="https://pbs.twimg.com/media/DE0AbUuVoAA7vxb.jpg:large" height="700" weight="700" class="center">
-
+<!--
     <center>
         <a href="{% url 'about' %}">ABOUT</a>
         <a href="{% url 'tour' %}">TOUR</a>
         <a href="{% url 'feed' %}">FEED</a>
     </center>
-<!--
+
     <div id="send-box">
         <form id="send-form" action="/action_page.php" target="_blank" method="GET">
             <input type="text" name="cmt" id="comment" placeholder="Add your comment">

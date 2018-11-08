@@ -85,9 +85,7 @@ def activity(request):
                 _edited_msg = request.GET.get('edit')
 
                 if _edited_msg != "":
-                    current_msg = TextMessage.objects.get(message=_message)
-                    current_msg.message = _edited_msg
-                    current_msg.save()
+                    TextMessage.objects.get(message=_message).update(message=_edited_msg)
 
                 else:
                     current_msg = TextMessage.objects.get(message=_message)

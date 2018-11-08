@@ -33,19 +33,18 @@ a:active {
 
     <h1>BLACKBEAR</h1>
 
-
-        <nav id="navbar">
-            <center>
+<center>
+        <nav id="navbar"
 
                 <a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a>
                 <a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a>
                 <a href="{% url 'tour' %}" style="font-family:Arial; font-size:13pt">TOUR</a>
                 <a href="{% url 'feed' %}" style="font-family:Arial; font-size:13pt">FEED</a>
 
-            </center>
+
         </nav>
 
-
+</center>
     {% if user.is_authenticated %}
         <center>
             <p style="font-size:13pt">Hi {{ user.username }}!

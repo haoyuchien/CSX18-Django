@@ -83,11 +83,11 @@ def activity(request):
             if request.GET.get('msg') is not None:
                 _message = request.GET.get('original')
                 _edited_msg = request.GET.get('edit')
-
-                if _edited_msg != "":
-                    TextMessage.objects.get(message=_message).update(message=_edited_msg)
-
-                else:
+                if 'delete' in request.POST:
                     current_msg = TextMessage.objects.get(message=_message)
                     current_msg.delete()
+                elif 'et' in request.POST:
+                    if _edited_msg != "":
+                        TextMessage.objects.get(message=_message).update(message=_edited_msg)
+
     return render(request, 'ACTIVITY.html', locals())

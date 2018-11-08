@@ -42,7 +42,7 @@ def tour(request):
     D6 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-06")
     D7 = TourDates.objects.create(city="Honolulu, HI", venue="The Republik", date="2018-12-07")
 
-    tourdates = TourDates.objects.all()
+    tourdates = TourDates.objects.distinct().all()
 
     return render(request, 'TOUR.html', locals())
 

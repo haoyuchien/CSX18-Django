@@ -49,8 +49,12 @@ def tour(request):
 
 def feed(request):
 
-    if 'name' in request.GET:
-        txt_msg = TextMessage.objects.create(talker=request.GET['name'], message=request.GET['msg'])
+    if request.method == 'POST':
+        _talker = request.POST.get('name')
+        if request.user.is_authenticated:
+            _talker = request.user.username
+        _message = request.POST.get('msg')
+        TextMessage.objects.create(talker=_talker, message=_message)
 
     msgs = TextMessage.objects.all()
 

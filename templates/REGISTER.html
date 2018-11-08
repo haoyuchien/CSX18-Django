@@ -32,14 +32,14 @@ a:active {
 <body style="background-color:pink">
 
     <h1>BLACKBEAR</h1>
+<center>
     <nav id="navbar">
-    <center>
-            <a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a>
-            <a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a>
-            <a href="{% url 'tour' %}" style="font-family:Arial; font-size:13pt">TOUR</a>
-            <a href="{% url 'feed' %}" style="font-family:Arial; font-size:13pt">FEED</a>
-    </center>
+        <a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a>
+        <a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a>
+        <a href="{% url 'tour' %}" style="font-family:Arial; font-size:13pt">TOUR</a>
+        <a href="{% url 'feed' %}" style="font-family:Arial; font-size:13pt">FEED</a>
     </nav>
+</center>
     <center>
         <p>Create An Account</p>
         <form action="." method="POST" name="form1">

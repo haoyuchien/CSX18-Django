@@ -33,23 +33,23 @@ a:active {
 
 <h1>BLACKBEAR</h1>
 
-<nav id="navbar">
-    <center>
-            <a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a>
-            <a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a>
-            <a href="{% url 'tour' %}" style="font-family:Arial; font-size:13pt">TOUR</a>
-            <a href="{% url 'feed' %}" style="font-family:Arial; font-size:13pt">FEED</a>
-    </center>
-</nav>
+<center>
+    <nav id="navbar">
+        <a href="{% url 'index' %}" style="font-family:Arial; font-size:13pt">HOME</a>
+        <a href="{% url 'about' %}" style="font-family:Arial; font-size:13pt">ABOUT</a>
+        <a href="{% url 'tour' %}" style="font-family:Arial; font-size:13pt">TOUR</a>
+        <a href="{% url 'feed' %}" style="font-family:Arial; font-size:13pt">FEED</a>
+    </nav>
+</center>
 
     <section id="guestbook">
         <div class="container" align="center" valign="center">
-            <div class="activity">
-                <form id="activity" action="." method="post">
-                    <button>Personal Activity</button>
-                </form>
-            </div>
-            <div class="search">
+            <div class="acty-srch">
+                {% if user.is_authenticated %}
+                    <form id="activity" action="." method="post">
+                        <button>Personal Activity</button>
+                    </form>
+                {% endif %}
                 <form id="search" action="." method="get">
                     <input type="text" name="search" id="srch" placeholder="Search comments">
                     <input type="submit" value="Search">

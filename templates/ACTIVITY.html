@@ -57,11 +57,13 @@ a:active {
                 <div class='msg'>
                     <span class="name">{{msg.talker}}</span>
                     {{msg.message}}
-                    <div class="UD">
-                        <button type="button">Edit</button>
-                        <button type="button">Delete</button>
+                    <div class="UD" align="right">
+                        <form id="ed-de" action="." method="post">
+                            <input type="text" id="edit" placeholder="Edit your comment" required="required">
+                            <button type="submit">Edit</button>
+                            <button type="button">Delete</button>
+                        </form>
                     </div>
-
 
                 </div>
                 {% endfor %}

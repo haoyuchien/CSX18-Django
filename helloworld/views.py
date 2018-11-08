@@ -75,8 +75,10 @@ def activity(request):
         msgs = TextMessage.objects.filter(talker__exact=user)
 
         if request.method == 'GET':
-            if request.GET.get('msg_search') is not None:
-                msg_search = request.GET.get('msg_search')
+            if request.GET.get('search') is not None:
+                msg_search = request.GET.get('search')
                 msgs = TextMessage.objects.filter(message__icontains=msg_search)
+
+
 
     return render(request, 'ACTIVITY.html', locals())

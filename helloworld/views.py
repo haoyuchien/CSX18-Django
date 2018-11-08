@@ -55,7 +55,7 @@ def feed(request):
     msgs = TextMessage.objects.all()
 
     if request.method == 'GET':
-        if request.user.is_authenticated:
+        #if request.user.is_authenticated:
             if request.GET.get('search') is not None:
                 msg_search = request.GET.get('search')
                 msgs = TextMessage.objects.filter(message__icontains=msg_search)

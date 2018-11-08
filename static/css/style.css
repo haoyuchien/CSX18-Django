@@ -45,11 +45,7 @@ a {
     display: block
 }
 
-.acty-srch {
-    display: inline-block;
-}
-
-#search {
+.search {
     position: absolute;
     left: 800px;
 }

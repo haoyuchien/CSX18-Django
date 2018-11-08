@@ -80,13 +80,13 @@ def activity(request):
                 msgs = TextMessage.objects.filter(message__icontains=msg_search)
 
         if request.method == 'POST':
-            #if request.POST.get('original') is not None:
+            if request.POST.get('original') is not None:
                 _message = request.POST.get('original')
                 _edited_msg = request.POST.get('edit')
                 if 'delete' in request.POST:
-                    TextMessage.objects.filter(message=_message).delete()
+                    TextMessage.objects.get(message=_message).delete()
                 elif 'et' in request.POST:
                     if _edited_msg != "":
-                        TextMessage.objects.filter(message=_message).update(message=_edited_msg)
+                        TextMessage.objects.get(message=_message).update(message=_edited_msg)
 
     return render(request, 'ACTIVITY.html', locals())

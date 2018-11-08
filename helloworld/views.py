@@ -84,10 +84,9 @@ def activity(request):
                 _message = request.POST.get('original')
                 _edited_msg = request.POST.get('edit')
                 if 'delete' in request.POST:
-                    current_msg = TextMessage.objects.get(message=_message)
-                    current_msg.delete()
+                    TextMessage.objects.filter(message=_message).delete()
                 elif 'et' in request.POST:
                     if _edited_msg != "":
-                        TextMessage.objects.get(message=_message).update(message=_edited_msg)
+                        TextMessage.objects.filter(message=_message).update(message=_edited_msg)
 
     return render(request, 'ACTIVITY.html', locals())

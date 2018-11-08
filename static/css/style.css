@@ -45,6 +45,12 @@ a {
     display: block
 }
 
+
+.search{
+    position: absolute;
+    left: 1000px;
+}
+
 #container {
     top: 100px;
     width: 800px;

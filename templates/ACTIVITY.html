@@ -43,37 +43,35 @@ a:active {
 </center>
 
     <section id="guestbook">
+        {% if user.is_authenticated %}
         <div class="container" align="center" valign="center">
-                <form id="search" action="." method="get">
-                    <input type="text" name="search" id="srch" placeholder="Search comments">
-                    <input type="submit" value="Search">
-                </form>
+
+            <form id="search" action="." method="get">
+                <input type="text" name="search" id="srch" placeholder="Search comments">
+                <input type="submit" value="Search">
+            </form>
+
 
             <div id="content" align="left">
                 {% for msg in msgs %}
                 <div class='msg'>
                     <span class="name">{{msg.talker}}</span>
                     {{msg.message}}
+                    <span class="UD">
+                        <button type="button">Edit</button>
+                        <button type="button">Delete</button>
+                    </span>
                 </div>
                 {% endfor %}
             </div>
 
-                {% if user.is_authenticated %}
-                <div id="send-box">
-                    <form id="send-form" action="." method="post">
-                        {% csrf_token %}
-                        <input type="submit" value="Personal Activity">
-                        <input type="text" name="msg" id="msg" placeholder="Leave a comment">
-                        <input type="submit" id="submit" value="Submit">
-                    </form>
-                {% else %}
+        {% else %}
                 <div id="send-box">
                     <p>Login to comment</p>
                     <button onclick="location.href='/account/login'">Login</button>
                 </div>
-                {% endif %}
-            </div>
         </div>
+        {% endif %}
     </section>
 </body>
 

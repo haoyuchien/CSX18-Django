@@ -62,7 +62,7 @@ a:active {
                 <div id="send-box">
                     <form id="send-form" action="." method="post">
                         {% csrf_token %}
-                        <button onclick="location.href='/activity'">Personal Activity</button>
+                        <button type="button" onclick="location.href='/activity'">Personal Activity</button>
                         <input type="text" name="msg" id="msg" placeholder="Leave a comment">
                         <input type="submit" id="submit" value="Submit">
                     </form>

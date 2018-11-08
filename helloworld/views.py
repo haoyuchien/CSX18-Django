@@ -70,4 +70,13 @@ def about(request):
     return render(request, 'ABOUT.html', locals())
 
 def activity(request):
+    if request.user.is_authenticated:
+        user = request.user
+        msgs = TextMessage.objects.filter(talker__exact=user)
+
+        if request.method == 'GET':
+            if request.GET.get('msg_search') is not None:
+                msg_search = request.GET.get('msg_search')
+                msgs = TextMessage.objects.filter(message__icontains=msg_search)
+
     return render(request, 'ACTIVITY.html', locals())

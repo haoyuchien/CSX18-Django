@@ -68,3 +68,6 @@ def feed(request):
 
 def about(request):
     return render(request, 'ABOUT.html', locals())
+
+def activity(request):
+    return render(request, 'ACTIVITY.html', locals())

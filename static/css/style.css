@@ -23,7 +23,7 @@ a {
     font-weight: bold;
 }
 
-#navbar ul li{
+#navbar {
     display: inline-block;
     text-align: center;
     font-family:"Arial";
@@ -46,9 +46,9 @@ a {
 }
 
 
-.search{
+.search form input{
     position: absolute;
-    left: 1000px;
+    left: 800px;
 }
 
 #container {

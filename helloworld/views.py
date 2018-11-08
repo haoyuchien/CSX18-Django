@@ -80,9 +80,9 @@ def activity(request):
                 msgs = TextMessage.objects.filter(message__icontains=msg_search)
 
         if request.method == 'POST':
-            if request.GET.get('msg') is not None:
-                _message = request.GET.get('original')
-                _edited_msg = request.GET.get('edit')
+            #if request.POST.get('original') is not None:
+                _message = request.POST.get('original')
+                _edited_msg = request.POST.get('edit')
                 if 'delete' in request.POST:
                     current_msg = TextMessage.objects.get(message=_message)
                     current_msg.delete()

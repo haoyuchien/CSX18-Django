@@ -122,7 +122,7 @@ input[type="button"] {
     size: 100%;
 }
 
-.UD {
+.UD>button{
     display: inline-block;
     position:right;
 }
